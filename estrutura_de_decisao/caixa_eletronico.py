@@ -6,7 +6,7 @@ quantas notas de cada valor serão fornecidas. As notas disponíveis serão as d
 
     Exemplo 1: Para sacar a quantia de 256 reais, o programa fornece duas notas de 100, uma nota de 50, uma nota de 5 e
     uma nota de 1;
-    Exemplo 2: Para sacar a quantia de 399 reais, o programa fornece três notas de 100, uma nota de 50, quatro notas de
+    Exemplo 2: Para sacar a quantia de 399 reais, o programa fornece notas de 100, uma nota de 50, quatro notas de
     10, uma nota de 5 e quatro notas de 1.
 """
 
@@ -33,6 +33,5 @@ if notas_de_5 > 0:
 
 if notas_de_1 > 0:
     print(f'{notas_de_1} nota(s) de 1')
-
 
 
