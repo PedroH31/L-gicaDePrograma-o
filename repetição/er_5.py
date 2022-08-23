@@ -1,5 +1,6 @@
-numero = 7
+numero = int(input('Digite um número: '))
+lista_de_numeros = [int(x) for x in str(numero)]  # separa os dígitos do número escolhido
 
-for c in range(2, 7 + 1):
-    if c % c == 0:
-        print(c)
+for n in lista_de_numeros:
+    print(sum(lista_de_numeros))
+    break
