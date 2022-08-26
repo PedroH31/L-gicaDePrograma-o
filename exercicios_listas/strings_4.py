@@ -9,6 +9,11 @@ Nome na vertical em escada. Modifique o programa anterior de forma a mostrar o n
     FULANO
 """
 
+nome = 'FULANO'
+escada = []
 
+for letra in nome:
+    escada.append(letra)
+    print(''.join(escada))
 
 
