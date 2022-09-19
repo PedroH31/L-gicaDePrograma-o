@@ -4,7 +4,8 @@ exemplo, se a entrada for o número 1377, a saída deve ser 7731.
 """
 
 numero = input('Digite um número: ')
-lista_de_numeros = [numero]
+ultimo = -1
 
-for n in lista_de_numeros:
-    print(n[::-1])
+for idx in numero:
+    print(numero[ultimo])
+    ultimo += -1

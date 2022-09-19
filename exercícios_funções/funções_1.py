@@ -12,13 +12,12 @@ Faça um programa para imprimir:
 """
 
 
-def escadinha(n: int):
-    for i in range(1, n + 1):
-        for _ in range(i):
-            print(i, end='   ')
+def escadinha(numero: int):
+
+    for indice in range(1, numero + 1):
+        for _ in range(1, indice):
+            print(indice, end='   ')
         print('')
 
 
-escadinha(1)
-
-escadinha(2)
+escadinha(9)

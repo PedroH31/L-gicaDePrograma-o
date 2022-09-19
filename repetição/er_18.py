@@ -7,17 +7,19 @@ número inteiro positivo é, ou não, um número perfeito.
 """
 
 numero = int(input('Digite um número: '))
-divisores_lst = []
+divisores = 0
 
 for n in range(1, numero):
-    if numero > 0:
-        for i in range(1, n):
-            if n % i == 0:
-                break
-            else:
-                divisores_lst.append(i)
+    if numero % n == 0:
+        divisores += n
 
-print(divisores_lst)
+    if divisores == numero:
+        print('É um número perfeito.')
+        break
+else:
+    print('Não é um número perfeito.')
+
+
 
 
 

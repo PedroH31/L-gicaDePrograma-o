@@ -8,9 +8,19 @@ quadrado perfeito”, caso contrário.
 
 """
 numero = int(input('Digite um número: '))
-total = 1
+total = 0
 
 for n in range(numero):
-    total = total * (n + 1)
+    if n % 2 == 1:
+        total += n
 
-print(total)
+    if numero == 1:
+        total += numero
+
+    if total == numero:
+        print('Este número é um quadrado perfeito.')
+        break
+
+else:
+    print('Este número não é um quadrado perfeito')
+
